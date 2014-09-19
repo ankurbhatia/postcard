@@ -63,21 +63,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amF-Y8-2SP">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCU-nv-yQi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Send Mail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="72" width="304" height="64"/>
+                                    <rect key="frame" x="114" y="208" width="93" height="30"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CmC-BH-8SE"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aVR-PR-rtR">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="255" width="288" height="30"/>
+                                    <rect key="frame" x="16" y="284" width="288" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="nameTextFieldModified:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="QCG-G5-EQU"/>
@@ -88,7 +91,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="293" width="288" height="30"/>
+                                    <rect key="frame" x="16" y="322" width="288" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="messageTextFieldModified:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="iBu-HA-4n1"/>
@@ -97,39 +100,47 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="superman_stamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ILI-re-zwI">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="208" y="144" width="96" height="90"/>
+                                    <rect key="frame" x="208" y="178" width="96" height="90"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCU-nv-yQi">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Send Mail">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvW-vR-fSQ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="114" y="174" width="93" height="30"/>
+                                    <rect key="frame" x="16" y="72" width="288" height="21"/>
                                 </variation>
-                                <connections>
-                                    <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CmC-BH-8SE"/>
-                                </connections>
-                            </button>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amF-Y8-2SP">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="93" width="304" height="45"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="amF-Y8-2SP"/>
+                                <exclude reference="MCU-nv-yQi"/>
                                 <exclude reference="aVR-PR-rtR"/>
                                 <exclude reference="A7z-Vm-C9G"/>
                                 <exclude reference="ILI-re-zwI"/>
-                                <exclude reference="MCU-nv-yQi"/>
+                                <exclude reference="TvW-vR-fSQ"/>
+                                <exclude reference="amF-Y8-2SP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="amF-Y8-2SP"/>
+                                <include reference="MCU-nv-yQi"/>
                                 <include reference="aVR-PR-rtR"/>
                                 <include reference="A7z-Vm-C9G"/>
                                 <include reference="ILI-re-zwI"/>
-                                <include reference="MCU-nv-yQi"/>
+                                <include reference="TvW-vR-fSQ"/>
+                                <include reference="amF-Y8-2SP"/>
                             </mask>
                         </variation>
                     </view>
@@ -137,6 +148,7 @@
                         <outlet property="mailButton" destination="MCU-nv-yQi" id="Hd6-1Q-wWv"/>
                         <outlet property="messageLabel" destination="amF-Y8-2SP" id="PFl-S6-mvF"/>
                         <outlet property="messageTextField" destination="A7z-Vm-C9G" id="IX2-6W-QVz"/>
+                        <outlet property="nameLabel" destination="TvW-vR-fSQ" id="6cJ-ZY-H8p"/>
                         <outlet property="nameTextField" destination="aVR-PR-rtR" id="p6a-oG-IFA"/>
                     </connections>
                 </viewController>

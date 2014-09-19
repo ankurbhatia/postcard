@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var messageLabel: UILabel!
     
     @IBOutlet weak var nameTextField: UITextField!
@@ -29,20 +31,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nameTextFieldModified(sender: UITextField) {
+        nameLabel.text = ""
         messageLabel.text = ""
         mailButton.setTitle("Send Mail", forState: UIControlState.Normal)
     }
 
     @IBAction func messageTextFieldModified(sender: UITextField) {
+        nameLabel.text = ""
         messageLabel.text = ""
         mailButton.setTitle("Send Mail", forState: UIControlState.Normal)
     }
     
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        nameLabel.text = "Hi " + nameTextField.text
+        nameLabel.textColor = UIColor.blueColor()
         messageLabel.text = messageTextField.text
         nameTextField.text = ""
         messageTextField.text = ""
         mailButton.setTitle("Mail Sent", forState:UIControlState.Normal)
+        nameLabel.hidden = false
         messageLabel.hidden = false
         messageTextField.resignFirstResponder()
     }
