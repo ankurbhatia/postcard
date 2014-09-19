@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433304AB19CCDCCD002FE45D /* superman_stamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 433304AA19CCDCCD002FE45D /* superman_stamp.jpg */; };
 		43BB9ABD19CCB08C005F6323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB9ABC19CCB08C005F6323 /* AppDelegate.swift */; };
 		43BB9ABF19CCB08C005F6323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB9ABE19CCB08C005F6323 /* ViewController.swift */; };
 		43BB9AC219CCB08C005F6323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BB9AC019CCB08C005F6323 /* Main.storyboard */; };
 		43BB9AC419CCB08C005F6323 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BB9AC319CCB08C005F6323 /* Images.xcassets */; };
 		43BB9AC719CCB08C005F6323 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43BB9AC519CCB08C005F6323 /* LaunchScreen.xib */; };
 		43BB9AD319CCB08C005F6323 /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB9AD219CCB08C005F6323 /* PostcardTests.swift */; };
+		43BB9ADD19CCCBEA005F6323 /* AzoreanBlueChurch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43BB9ADC19CCCBEA005F6323 /* AzoreanBlueChurch.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		433304AA19CCDCCD002FE45D /* superman_stamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superman_stamp.jpg; sourceTree = "<group>"; };
 		43BB9AB719CCB08C005F6323 /* Postcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BB9ABB19CCB08C005F6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BB9ABC19CCB08C005F6323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		43BB9ACC19CCB08C005F6323 /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BB9AD119CCB08C005F6323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43BB9AD219CCB08C005F6323 /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		43BB9ADC19CCCBEA005F6323 /* AzoreanBlueChurch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AzoreanBlueChurch.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		43BB9AB919CCB08C005F6323 /* Postcard */ = {
 			isa = PBXGroup;
 			children = (
+				43BB9ADC19CCCBEA005F6323 /* AzoreanBlueChurch.jpg */,
 				43BB9ABC19CCB08C005F6323 /* AppDelegate.swift */,
 				43BB9ABE19CCB08C005F6323 /* ViewController.swift */,
 				43BB9AC019CCB08C005F6323 /* Main.storyboard */,
@@ -90,6 +95,7 @@
 		43BB9ABA19CCB08C005F6323 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				433304AA19CCDCCD002FE45D /* superman_stamp.jpg */,
 				43BB9ABB19CCB08C005F6323 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				43BB9AC219CCB08C005F6323 /* Main.storyboard in Resources */,
+				43BB9ADD19CCCBEA005F6323 /* AzoreanBlueChurch.jpg in Resources */,
+				433304AB19CCDCCD002FE45D /* superman_stamp.jpg in Resources */,
 				43BB9AC719CCB08C005F6323 /* LaunchScreen.xib in Resources */,
 				43BB9AC419CCB08C005F6323 /* Images.xcassets in Resources */,
 			);
@@ -405,6 +413,7 @@
 				43BB9AD819CCB08C005F6323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43BB9AD919CCB08C005F6323 /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				43BB9ADB19CCB08C005F6323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
